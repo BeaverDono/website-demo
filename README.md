@@ -2,11 +2,11 @@
 Showcasing the extent of my HTML/CSS/JavaScript skills at the moment..<br>
 This is still a work in progress and I'll be adding onto it as time goes on.
 
-To view this project, just click the link below!<br>
-https://htmlpreview.github.io/?https://github.com/BeaverDono/website-demo/blob/main/index.html<br>
+GitHub Page coming soon!
 <br>
 Last Updated: 09/03/2021<br>
 <br>
 <br>
-# BUG REPORT<br>
-- CSS not implementing custom SVG bullet points - Possible issue with HTML Preview page? (9/03/2021)
+# KNOWN BUG/TO-DO LIST<br>
+- Add functionality to Contact section
+- Clean up mobile navigation bar
