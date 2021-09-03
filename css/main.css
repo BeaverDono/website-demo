@@ -1,0 +1,337 @@
+/* 
+Author: Christoffer Gray
+Date: 09/03/2021
+
+Notes about this CSS:
+Designing the CSS for mobile usage, afterwards
+I'll be doing media queries for normal desktop
+usage!
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap");
+:root {
+  --primary-color: #a0a0a0;
+}
+
+body {
+  background: #dddddd;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  height: 35px;
+  width: auto;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .3em;
+}
+
+.left-col h1 {
+  font-size: 5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.left-col .hero-cta .watching-video-cta {
+  vertical-align: middle;
+  margin-top: -1.2em;
+  margin-right: 0.5em;
+  height: 70px;
+  width: auto;
+  display: inline-block;
+}
+
+.left-col .hero-cta .primary-cta {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.left-col .hero-img {
+  width: 50%;
+  margin-bottom: 2em;
+}
+
+.aboutme {
+  background: #20272E;
+  color: white;
+}
+
+ul.aboutme-list {
+  margin: 0;
+  padding-left: 0.1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+}
+
+ul.aboutme-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.aboutme-list li:before {
+  left: -1em;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/angle-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: .5em;
+}
+
+.aboutme img {
+  display: none;
+}
+
+.skills {
+  background: var(--primary-color);
+}
+
+.skills li {
+  background: #b3b3b3;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.skills li img {
+  width: 5em;
+  height: 5em;
+  background: #ffffff;
+  border: 5px solid #b3b3b3;
+  border-radius: 80%;
+  margin-top: -4.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: -1em;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+input[type="text"] {
+  margin-left: 1em;
+  width: 25%;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+
+input[type="email"] {
+  margin-left: 1.3em;
+  width: 25%;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="submit"] {
+  float: right;
+  margin-right: 10%;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 5em;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+iframe {
+  margin-top: 5em;
+  width: 100%;
+  height: 300px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 20%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  height: 40px;
+  width: auto;
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+/* 
+Media Query starts here
+All code after this point is gonna be dealing with desktop display
+*/
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .subhead {
+    margin-left: -30em;
+  }
+  .hero h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+    margin-left: -2em;
+  }
+  .hero .hero-img {
+    float: right;
+    margin-top: -17em;
+  }
+  .hero .hero-cta {
+    margin-left: -4em;
+  }
+  .hero .hero-cta .watching-video-cta {
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
