@@ -10,3 +10,4 @@ Last Updated: 09/03/2021<br>
 # TO-DO LIST<br>
 - Add functionality to Contact section
 - Clean up mobile navigation bar
+- Add meaningful content to Skills section
