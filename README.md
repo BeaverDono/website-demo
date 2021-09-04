@@ -9,5 +9,5 @@ Last Updated: 09/04/2021<br>
 
 # TO-DO LIST<br>
 - Add functionality to Contact section
-- Clean up mobile navigation bar
+- <strike>Clean up mobile navigation bar</strike>
 - Add meaningful content to Skills section
