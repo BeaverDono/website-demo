@@ -77,7 +77,7 @@ section {
 }
 
 .left-col h1 {
-  font-size: 5em;
+  font-size: 3em;
   line-height: 1.3em;
   margin-top: .2em;
 }
@@ -124,7 +124,8 @@ ul.aboutme-list {
 ul.aboutme-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
-  margin-left: 2em;
+  margin-left: 3em;
+  margin-right: 5em;
   position: relative;
 }
 
@@ -178,20 +179,20 @@ label {
 
 input[type="text"] {
   margin-left: 1em;
-  width: 25%;
+  width: 50%;
   border-radius: 0.5em;
   padding: 0.2em;
 }
 
 input[type="email"] {
   margin-left: 1.3em;
-  width: 25%;
+  width: 50%;
   border-radius: 0.5em;
   padding: 0.2em;
 }
 
 textarea {
-  width: 90%;
+  width: 99%;
   border-radius: 0.5em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -233,27 +234,27 @@ nav {
 }
 
 nav ul.primary-nav {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 nav li a {
   color: white;
   text-decoration: none;
+  font-size: 90%;
   display: block;
-  padding: .5em;
-  font-size: 1.3em;
-  text-align: right;
+  padding: 0.2em;
+  text-align: left;
 }
 
 nav li a:hover {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .mobile-menu-exit {
   height: 40px;
   width: auto;
   float: right;
-  margin: .5em;
+  margin-top: -0.2em;
   cursor: pointer;
 }
 
@@ -321,17 +322,16 @@ All code after this point is gonna be dealing with desktop display
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: left;
-    margin-left: -2em;
+    margin-left: 1em;
+    font-size: 3.5em;
+    margin-top: 0.5em;
   }
   .hero .hero-img {
     float: right;
-    margin-top: -17em;
+    margin-top: -16em;
   }
   .hero .hero-cta {
-    margin-left: -4em;
-  }
-  .hero .hero-cta .watching-video-cta {
-    margin-right: 5px;
+    margin-left: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
