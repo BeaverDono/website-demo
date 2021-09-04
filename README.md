@@ -10,4 +10,5 @@ Last Updated: 09/04/2021<br>
 # TO-DO LIST<br>
 - Add functionality to Contact section
 - <strike>Clean up mobile navigation bar</strike>
+  - Font needs to be bigger! Derp!
 - Add meaningful content to Skills section
